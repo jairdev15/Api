@@ -1,0 +1,19 @@
+spring:
+  r2dbc:
+    url: r2dbc:h2:mem:///testdb
+    username: sa
+    password: 
+  
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+logging:
+  level:
+    org.springframework.r2dbc: DEBUG
+
+#Configuraciones de GoRest
+gorest:
+  api:
+    url: https://gorest.co.in/public/v2/users
